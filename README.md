@@ -75,7 +75,8 @@ Mozilla TTS is able to give on par or better performance compared to other
 open-sourced text2speech solutions. It also supports various languages
 (English, German, Chinese etc.), with very little change.
 
-<p align="center"><img src="https://drive.google.com/uc?export=view&id=143uyTQBBjkS805iNKB8GBtW10HIav5gW"/></p>
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1A3u_c0ErRtsx9GiM53NbVR5zEQrKrXEK"/></p>
+
 
 
 ### 2.1 Most important files of the project
