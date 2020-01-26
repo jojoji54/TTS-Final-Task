@@ -77,6 +77,9 @@ open-sourced text2speech solutions. It also supports various languages
 
 ![USJ](https://drive.google.com/uc?export=view&id=1HWI0n2dt2shCmTx8_47kmVpP_mJgIR6g)
 
+![T2S](https://drive.google.com/uc?export=view&id=1A3u_c0ErRtsx9GiM53NbVR5zEQrKrXEK)
+https://drive.google.com/open?id=1A3u_c0ErRtsx9GiM53NbVR5zEQrKrXEK
+
 
 
 ### 2.1 Most important files of the project
