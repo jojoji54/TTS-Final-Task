@@ -77,9 +77,6 @@ open-sourced text2speech solutions. It also supports various languages
 
 ![T2S](https://drive.google.com/uc?export=view&id=1A3u_c0ErRtsx9GiM53NbVR5zEQrKrXEK)
 
-
-
-
 ### 2.1 Most important files of the project
 
 The project is composed by a lot of complex and different kind of python files
