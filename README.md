@@ -18,8 +18,7 @@ By Juan Ormaechea Belloso
    - 3.4 Initialize models part
 - 4. Tacotron and tacotron
 - 5. Conclusion
-- 6. Bibliography
-- 7. Questions
+
 
 
 ## 1. Introduction
