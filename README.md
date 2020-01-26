@@ -75,10 +75,8 @@ Mozilla TTS is able to give on par or better performance compared to other
 open-sourced text2speech solutions. It also supports various languages
 (English, German, Chinese etc.), with very little change.
 
-![USJ](https://drive.google.com/uc?export=view&id=1HWI0n2dt2shCmTx8_47kmVpP_mJgIR6g)
-
 ![T2S](https://drive.google.com/uc?export=view&id=1A3u_c0ErRtsx9GiM53NbVR5zEQrKrXEK)
-https://drive.google.com/open?id=1A3u_c0ErRtsx9GiM53NbVR5zEQrKrXEK
+
 
 
 
@@ -88,8 +86,12 @@ The project is composed by a lot of complex and different kind of python files
 and Jason files. However, I’m going to explain how they are completed the most
 important files.
 
+![T2S](https://drive.google.com/uc?export=view&id=1MmZnm5HcHQ_15y9K7kGu7vWDIdZdT-wm)
+
 
 If we navigate into utils → text, we can see something like this:
+
+![T2S](https://drive.google.com/uc?export=view&id=17H41ix7VUtbpRFZ3zvDgiUWqPcFCIcY8)
 
 Here are the python files that contains symbols like numbers and abbreviations
 that we need to converts into their equivalent written-out words as I say before,
@@ -97,14 +99,19 @@ remember that this process is called tokenization and when we arrived into this
 files we are in the process of the front end of the TTS. Here we can see some of
 that symbols that I mentioned before:
 
+![T2S](https://drive.google.com/uc?export=view&id=1pmqTtfgtdO_rWFOtK3QPnNPdGGn2VMeX)
+
 Then, tests → data → ljspeech folder contains the wavs files, I mean, the
 recorded speech files that we need to get the synthetized audio. Remember
 that we are going to use these files in the artificial human speech production
 using speech synthesis as I say before.
 
+![T2S](https://drive.google.com/uc?export=view&id=1qN55JLoPTbH58kTWhzSTTfLTsuAbWoOC)
 
 Models folder contains the different tools that we are going to use for train our
 recorded pieces of audio. In this case, tacotron and tacotron 2.
+
+![T2S](https://drive.google.com/uc?export=view&id=141H6uFpekUwfaS-t-FU_aFHlSCw1f0x6)
 
 This part I think is the most important part for train our project. Later I’m going to
 explain what they are and how they work.
