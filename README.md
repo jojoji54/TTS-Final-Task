@@ -1,5 +1,5 @@
-# TTS-Final-Task
-Text to speech final task
+# Text to speech based on mozilla TTS 
+for Intelligent Systems
 
 ```
 By Juan Ormaechea Belloso
@@ -148,6 +148,8 @@ work.
 We are going to start the code downloading the necessary files from the
 different gits URLs as we can see below:
 
+![T2S](https://drive.google.com/uc?export=view&id=1CMcwN2vC7mq-OJv0YIcpyKSz9MvH8LSd)
+
 As we can see, we download the Mozilla TTS project and WaveRNN project.
 However, if we don’t want to download the Mozilla TTS project because we
 developed our personal git project for this code, we can also put the URL there,
@@ -168,14 +170,21 @@ manipulate raw audio.
 Then, we must download the audio files that we want to use to train and get a
 synthesize speech.
 
+![T2S](https://drive.google.com/uc?export=view&id=1f9zzCs1SKtuG6eOWDE2CNSa6_wBvQCwX)
 
 After download the audio files we create a train validation splits.
+
+![T2S](https://drive.google.com/uc?export=view&id=1FKSM46XxrlGK2Tlnn7ZcOQXRtyHDC0kC)
 
 At this moment, the Test dataset provides the gold standard used to evaluate
 the model. It is only used once a model is completely trained:
 
+![T2S](https://drive.google.com/uc?export=view&id=1hVgWLvNPBUs_LFG_LD7s-ei94LGJVie8)
+
 Then, we are going to download pretrained models for don’t waste our time or
 training one, however we can train our pretrained models:
+
+![T2S](https://drive.google.com/uc?export=view&id=1Ts9gCnZQv_AuIWJi5BeCncJKfxaGRPpm)
 
 If you are thinking what those files are, I have to say that pretrained models’
 files are a model created by someone else to solve a similar problem. Instead of
@@ -190,6 +199,8 @@ trained on other problem as a starting point.
 At this part we are going to install the Mozilla TTS project for use the config
 code of the project:
 
+![T2S](https://drive.google.com/uc?export=view&id=1bHkU1Xn8EJabBIui2Ov6k8KVnzVq2fjk)
+
 Setup.py is the main python class of the project, from this file we can use every
 file of the project as we can see on the resume where the program is installing
 the code, we are installing the different parts of the project that we need for
@@ -202,13 +213,18 @@ Then, we are going to stablish some parameter for the Jason file. These
 parameters are just for this code and can will change depend our objectives,
 also these parameters are very important for train a synthetize speech:
 
+![T2S](https://drive.google.com/uc?export=view&id=1h6yKJufaiu9lcXzlZi4dyHcOpmW-VIhd)
+
 We are going to repeat this process also for WaveRNN Jason file:
 
+![T2S](https://drive.google.com/uc?export=view&id=1ruBi8KactJdf_59C9zJYwxdP6JJMWmR5)
 
 ### 3.3 Training part.
 
 After we configure our different Jason files, we can start training our data as we
 can see in the image below:
+
+![T2S](https://drive.google.com/uc?export=view&id=1PdNXNJLtIGos9aTctZt56PQkQgd90M98)
 
 The code extracts the parameters of the Jason’s files, then it takes the recorded
 speech files from the database and creates a Python NumPy Array files. This
@@ -222,6 +238,7 @@ tacotron and tacotron 2, so we are going to train the audios with two different
 tools for use with tacotron and tacotron 2, the first one is for tacotron, and this
 one is for tacotron 2 using the Jason file of waveRNN:
 
+![T2S](https://drive.google.com/uc?export=view&id=1LeXlPUoKHPBYb1u5oQnDzMgfxu16cXI1)
 
 After the program finished with the training, we can see that the code creates
 something called: Pre- trained models. One for TTS and another one for
@@ -231,8 +248,11 @@ These models are very important because they will give us the final solution,
 however, we have to locate it first, later we can create the synthetize speech
 using tacotron and tacotron 2:
 
+![T2S](https://drive.google.com/uc?export=view&id=1OusAnEw8LBwwryFSTq-6ivK66WS5fenb)
 
 ### 3.4 Initialize models part
+
+![T2S](https://drive.google.com/uc?export=view&id=11HWfB48wrEE-Zy3TodEjxfeEpjNqhQNP)
 
 The most important part of the code, in this part of the code we do the process
 that I explained in the introduction to get the synthesize audio. I mean, first the
@@ -243,6 +263,7 @@ But this is just the first part, then as we have a phonetic transcription and we
 can use It for make up the symbolic linguistic representation and converts the
 symbolic linguistic representation into sound as we can see at least.
 
+![T2S](https://drive.google.com/uc?export=view&id=1KXWFdROLRvNZDSivb61uta4OLE7GD0ad)
 
 ## 4. Tacotron and tacotron
 
@@ -265,8 +286,11 @@ attention-based decoder, and a post-processing net. As seen in the architecture
 diagram below, the model takes characters as input and outputs a raw
 spectrogram. This spectrogram is then converted to waveforms.
 
+![T2S](https://drive.google.com/uc?export=view&id=1jlQRVPgjxvGa41Pu3nYCPLACNctUZAwD)
+
 The figure below shows what the CBHG module looks like.
 
+![T2S](https://drive.google.com/uc?export=view&id=1oH-H0T872wU43TuLKzXBP_ktmAbeQu5M)
 
 A character sequence is fed to the encoder, which extracts sequential
 representations of text. Each character is represented as a one-hot vector and
@@ -278,6 +302,7 @@ The decode used is a tanh content-based attention decoder. The waveforms are
 then generated using the Griffin-Lim algorithm. The hyper-parameters used for
 this model are shown below.
 
+![T2S](https://drive.google.com/uc?export=view&id=1qIv4vL181bVWSlr7rGRhTa0nhRNjMzrx)
 
 Finally, Tacotron 2 is an AI-powered speech synthesis system that can convert
 text to speech and is a neural network architecture synthesizes speech directly
@@ -291,6 +316,8 @@ the system consists of two components:
     input character sequence
 2. A modified version of WaveNet which generates time-domain waveform
     samples conditioned on the predicted mel spectrogram frames
+
+![T2S](https://drive.google.com/uc?export=view&id=1fd4KNE9SSkNC3_wEJm0RpP_DqHbbvY66)
 
 The differences between Tacotron and tacotron 2 are easy to see:
 
